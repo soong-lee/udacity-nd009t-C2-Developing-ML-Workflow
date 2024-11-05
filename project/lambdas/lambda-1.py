@@ -21,11 +21,11 @@ def lambda_handler(event, context):
     # Pass the data back to the Step Function
     print("Event:", event.keys())
     return {
-        'statusCode': 200,
+        'statusCode': 200,  
         'body': {
             "image_data": image_data,
             "s3_bucket": bucket,
             "s3_key": key,
-            "inferences": []
+            "inferences": []  
         }
     }

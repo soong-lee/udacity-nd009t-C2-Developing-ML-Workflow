@@ -1,6 +1,6 @@
 import json
 
-THRESHOLD = .93
+THRESHOLD = .63
 
 def lambda_handler(event, context):
     
@@ -19,5 +19,5 @@ def lambda_handler(event, context):
 
     return {
         'statusCode': 200,
-        'body': json.dumps(event)
+        'body': json.dumps(event['body'])
     }
